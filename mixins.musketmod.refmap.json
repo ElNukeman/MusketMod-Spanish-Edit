@@ -1,0 +1,98 @@
+{
+  "mappings": {
+    "ewewukek/musketmod/mixin/SkeletonModelMixin": {
+      "prepareMobModel": "Lnet/minecraft/client/model/SkeletonModel;m_6839_(Lnet/minecraft/world/entity/Mob;FFF)V",
+      "Lnet/minecraft/world/entity/Mob;getMainHandItem()Lnet/minecraft/world/item/ItemStack;": "Lnet/minecraft/world/entity/Mob;m_21205_()Lnet/minecraft/world/item/ItemStack;",
+      "setupAnim": "Lnet/minecraft/client/model/SkeletonModel;m_6973_(Lnet/minecraft/world/entity/Mob;FFFFF)V"
+    },
+    "ewewukek/musketmod/mixin/MultiPlayerGameModeMixin": {
+      "useItem": "Lnet/minecraft/client/multiplayer/MultiPlayerGameMode;m_233721_(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResult;",
+      "interact": "Lnet/minecraft/client/multiplayer/MultiPlayerGameMode;m_105226_(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResult;",
+      "interactAt": "Lnet/minecraft/client/multiplayer/MultiPlayerGameMode;m_105230_(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/phys/EntityHitResult;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResult;",
+      "useItemOn": "Lnet/minecraft/client/multiplayer/MultiPlayerGameMode;m_233732_(Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/phys/BlockHitResult;)Lnet/minecraft/world/InteractionResult;"
+    },
+    "ewewukek/musketmod/mixin/MinecraftMixin": {
+      "startAttack": "Lnet/minecraft/client/Minecraft;m_202354_()Z",
+      "continueAttack": "Lnet/minecraft/client/Minecraft;m_91386_(Z)V",
+      "handleKeybinds": "Lnet/minecraft/client/Minecraft;m_91279_()V"
+    },
+    "ewewukek/musketmod/mixin/EntityMixin": {
+      "spawnAtLocation(Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/entity/item/ItemEntity;": "Lnet/minecraft/world/entity/Entity;m_19983_(Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/entity/item/ItemEntity;"
+    },
+    "ewewukek/musketmod/mixin/PillagerMixin": {
+      "populateDefaultEquipmentSlots": "Lnet/minecraft/world/entity/monster/Pillager;m_213945_(Lnet/minecraft/util/RandomSource;Lnet/minecraft/world/DifficultyInstance;)V",
+      "registerGoals": "Lnet/minecraft/world/entity/monster/Pillager;m_8099_()V",
+      "getArmPose": "Lnet/minecraft/world/entity/monster/Pillager;m_6768_()Lnet/minecraft/world/entity/monster/AbstractIllager$IllagerArmPose;"
+    },
+    "ewewukek/musketmod/mixin/LocalPlayerMixin": {
+      "aiStep": "Lnet/minecraft/client/player/LocalPlayer;m_8107_()V",
+      "isUsingItem": "Lnet/minecraft/client/player/LocalPlayer;m_6117_()Z",
+      "canStartSprinting": "Lnet/minecraft/client/player/LocalPlayer;m_264082_()Z",
+      "getViewXRot": "Lnet/minecraft/client/player/LocalPlayer;m_5686_(F)F"
+    },
+    "ewewukek/musketmod/mixin/PlayerMixin": {
+      "isScoping": "Lnet/minecraft/world/entity/player/Player;m_150108_()Z"
+    },
+    "ewewukek/musketmod/mixin/AbstractClientPlayerMixin": {
+      "getFieldOfViewModifier": "Lnet/minecraft/client/player/AbstractClientPlayer;m_108565_()F"
+    },
+    "ewewukek/musketmod/mixin/HumanoidModelMixin": {
+      "poseRightArm": "Lnet/minecraft/client/model/HumanoidModel;m_102875_(Lnet/minecraft/world/entity/LivingEntity;)V",
+      "poseLeftArm": "Lnet/minecraft/client/model/HumanoidModel;m_102878_(Lnet/minecraft/world/entity/LivingEntity;)V",
+      "setupAnim": "Lnet/minecraft/client/model/HumanoidModel;m_6973_(Lnet/minecraft/world/entity/LivingEntity;FFFFF)V"
+    },
+    "ewewukek/musketmod/mixin/AbstractSkeletonMixin": {
+      "populateDefaultEquipmentSlots": "Lnet/minecraft/world/entity/monster/AbstractSkeleton;m_213945_(Lnet/minecraft/util/RandomSource;Lnet/minecraft/world/DifficultyInstance;)V",
+      "registerGoals": "Lnet/minecraft/world/entity/monster/AbstractSkeleton;m_8099_()V"
+    }
+  },
+  "data": {
+    "searge": {
+      "ewewukek/musketmod/mixin/SkeletonModelMixin": {
+        "prepareMobModel": "Lnet/minecraft/client/model/SkeletonModel;m_6839_(Lnet/minecraft/world/entity/Mob;FFF)V",
+        "Lnet/minecraft/world/entity/Mob;getMainHandItem()Lnet/minecraft/world/item/ItemStack;": "Lnet/minecraft/world/entity/Mob;m_21205_()Lnet/minecraft/world/item/ItemStack;",
+        "setupAnim": "Lnet/minecraft/client/model/SkeletonModel;m_6973_(Lnet/minecraft/world/entity/Mob;FFFFF)V"
+      },
+      "ewewukek/musketmod/mixin/MultiPlayerGameModeMixin": {
+        "useItem": "Lnet/minecraft/client/multiplayer/MultiPlayerGameMode;m_233721_(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResult;",
+        "interact": "Lnet/minecraft/client/multiplayer/MultiPlayerGameMode;m_105226_(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResult;",
+        "interactAt": "Lnet/minecraft/client/multiplayer/MultiPlayerGameMode;m_105230_(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/phys/EntityHitResult;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResult;",
+        "useItemOn": "Lnet/minecraft/client/multiplayer/MultiPlayerGameMode;m_233732_(Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/phys/BlockHitResult;)Lnet/minecraft/world/InteractionResult;"
+      },
+      "ewewukek/musketmod/mixin/MinecraftMixin": {
+        "startAttack": "Lnet/minecraft/client/Minecraft;m_202354_()Z",
+        "continueAttack": "Lnet/minecraft/client/Minecraft;m_91386_(Z)V",
+        "handleKeybinds": "Lnet/minecraft/client/Minecraft;m_91279_()V"
+      },
+      "ewewukek/musketmod/mixin/EntityMixin": {
+        "spawnAtLocation(Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/entity/item/ItemEntity;": "Lnet/minecraft/world/entity/Entity;m_19983_(Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/entity/item/ItemEntity;"
+      },
+      "ewewukek/musketmod/mixin/PillagerMixin": {
+        "populateDefaultEquipmentSlots": "Lnet/minecraft/world/entity/monster/Pillager;m_213945_(Lnet/minecraft/util/RandomSource;Lnet/minecraft/world/DifficultyInstance;)V",
+        "registerGoals": "Lnet/minecraft/world/entity/monster/Pillager;m_8099_()V",
+        "getArmPose": "Lnet/minecraft/world/entity/monster/Pillager;m_6768_()Lnet/minecraft/world/entity/monster/AbstractIllager$IllagerArmPose;"
+      },
+      "ewewukek/musketmod/mixin/LocalPlayerMixin": {
+        "aiStep": "Lnet/minecraft/client/player/LocalPlayer;m_8107_()V",
+        "isUsingItem": "Lnet/minecraft/client/player/LocalPlayer;m_6117_()Z",
+        "canStartSprinting": "Lnet/minecraft/client/player/LocalPlayer;m_264082_()Z",
+        "getViewXRot": "Lnet/minecraft/client/player/LocalPlayer;m_5686_(F)F"
+      },
+      "ewewukek/musketmod/mixin/PlayerMixin": {
+        "isScoping": "Lnet/minecraft/world/entity/player/Player;m_150108_()Z"
+      },
+      "ewewukek/musketmod/mixin/AbstractClientPlayerMixin": {
+        "getFieldOfViewModifier": "Lnet/minecraft/client/player/AbstractClientPlayer;m_108565_()F"
+      },
+      "ewewukek/musketmod/mixin/HumanoidModelMixin": {
+        "poseRightArm": "Lnet/minecraft/client/model/HumanoidModel;m_102875_(Lnet/minecraft/world/entity/LivingEntity;)V",
+        "poseLeftArm": "Lnet/minecraft/client/model/HumanoidModel;m_102878_(Lnet/minecraft/world/entity/LivingEntity;)V",
+        "setupAnim": "Lnet/minecraft/client/model/HumanoidModel;m_6973_(Lnet/minecraft/world/entity/LivingEntity;FFFFF)V"
+      },
+      "ewewukek/musketmod/mixin/AbstractSkeletonMixin": {
+        "populateDefaultEquipmentSlots": "Lnet/minecraft/world/entity/monster/AbstractSkeleton;m_213945_(Lnet/minecraft/util/RandomSource;Lnet/minecraft/world/DifficultyInstance;)V",
+        "registerGoals": "Lnet/minecraft/world/entity/monster/AbstractSkeleton;m_8099_()V"
+      }
+    }
+  }
+}
